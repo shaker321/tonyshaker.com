@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Shaker | Career Coaching</title>
+    <meta name="description" content="Tony Shaker helps people navigate career transitions with clarity, confidence, and a sense of direction that feels true to who they are.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pine: '#2f4f3f',
+                        moss: '#768d63',
+                        sage: '#a7b88f',
+                        amber: '#e0a84a',
+                        terracotta: '#c86f4d',
+                        clay: '#b95d46',
+                        rust: '#a64b3a',
+                        sunflower: '#f2c15d',
+                        sky: '#9fc5d8',
+                        lilac: '#bda7d9',
+                        berry: '#8d4c5f',
+                        sand: '#f5efe6',
+                        cream: '#faf5ee',
+                        dusk: '#2b2a27',
+                        olive: '#586e4a',
+                        coral: '#ef7a5a',
+                        forest: '#1d352d'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif']
+                    },
+                    boxShadow: {
+                        warm: '0 25px 60px rgba(43,42,39,0.15)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --warm-bg: #efe1d1;
+            --photo-overlay: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f3efe9;
+            color: #2b2a27;
+        }
+
+        .hero-bg {
+            background-image: var(--photo-overlay),
+                url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .story-photo {
+            background-image: url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .journey-photo {
+            background-image: url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .path-photo {
+            background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .dog-photo {
+            background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mountain-photo {
+            background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sunrise-trail {
+            background-image: linear-gradient(180deg, rgba(26,47,40,0.08), rgba(26,47,40,0.16)),
+                url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .forest-lake {
+            background-image: linear-gradient(180deg, rgba(20,35,30,0.08), rgba(20,35,30,0.14)),
+                url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .journey-section {
+            background-image: var(--photo-overlay),
+                url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .meadow-hills {
+            background-image: linear-gradient(180deg, rgba(20,35,30,0.06), rgba(20,35,30,0.12)),
+                url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cta-photo {
+            background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .soft-card {
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.72);
+        }
+
+        .warm-bg {
+            background-color: var(--warm-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
+            <a href="#top" class="flex items-center gap-3">
+                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-sm font-bold text-pine shadow-md">TS</div>
+                <div class="flex flex-col items-start justify-center leading-none text-left text-white">
+                    <p class="font-serif text-3xl leading-[0.9] tracking-[-0.04em]">Tony Shaker</p>
+                    <p class="mt-3 text-[10px] uppercase tracking-[0.28em] text-white/75">Career coaching</p>
+                </div>
+            </a>
+
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="#about" class="text-sm font-medium text-white/90 transition hover:text-sunflower">About</a>
+                <a href="#process" class="text-sm font-medium text-white/90 transition hover:text-sunflower">Process</a>
+                <a href="#services" class="text-sm font-medium text-white/90 transition hover:text-sunflower">Services</a>
+                <a href="https://calendly.com/tonyshaker" class="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#d77b4a] shadow-lg shadow-[#d77b4a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4]">Book a consult</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero-bg min-h-screen px-5 pb-20 pt-28 md:px-8 lg:px-12">
+            <div class="mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center">
+                <div class="w-full max-w-[980px]">
+                    <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-white/85 backdrop-blur-sm">
+                        <span class="inline-block h-2.5 w-2.5 rounded-full bg-[#2f4f3f]"></span>
+                        Meaningful work. Real momentum.
+                    </div>
+
+                    <h1 class="font-serif text-5xl leading-[0.92] text-white md:text-6xl lg:text-7xl">
+                        Start the next chapter of your career with clarity and courage.
+                    </h1>
+
+                    <p class="mt-6 max-w-[820px] text-lg leading-relaxed text-white/80 md:text-xl">
+                        I help thoughtful, ambitious people find work that fits their strengths, values, and life—not just the next title on the ladder.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <a href="https://calendly.com/tonyshaker" class="inline-flex items-center justify-center rounded-full bg-[#d77b4a] px-7 py-3.5 text-base font-medium text-white shadow-lg shadow-[#d77b4a]/30 transition hover:-translate-y-0.5 hover:bg-[#c96d4d]">Book a free consult</a>
+                        <a href="#about" class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/5 px-7 py-3.5 text-base font-medium text-white backdrop-blur-sm transition hover:bg-white/10">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="warm-bg px-5 py-20 md:px-8 lg:px-12 lg:py-28">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-12 max-w-3xl">
+                    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#2f4f3f]">About Tony</p>
+                    <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
+                        Career coaching that feels grounded, honest, and energizing.
+                    </h2>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+                    <div class="dog-photo h-[440px] overflow-hidden rounded-[30px] border border-[#d8c4a7] shadow-warm"></div>
+
+                    <div class="rounded-[30px] border border-[#d8c4a7] bg-[#f7efe5] p-8 shadow-warm md:p-10">
+                        <p class="text-lg leading-relaxed text-dusk/80">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="journey-section px-5 py-20 text-white md:px-8 lg:px-12 lg:py-28">
+            <div class="mx-auto max-w-7xl">
+                <div class="mx-auto mb-12 max-w-4xl md:p-8">
+                    <div class="text-center">
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#f3d39f]">The journey</p>
+                        <h2 class="font-serif text-5xl leading-none text-white md:text-6xl">
+                            A calm, strategic process for a meaningful next move.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="grid gap-6 lg:grid-cols-4">
+                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 p-7 shadow-warm text-dusk">
+                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#f0d29b] text-lg font-bold text-[#2f2b2a]">01</div>
+                        <h3 class="font-serif text-4xl text-dusk">Assess</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We look at where you are, what matters most, and what is quietly draining your energy.</p>
+                    </div>
+
+                    <div class="rounded-[28px] border border-white/20 bg-[#eef5ee]/90 p-7 shadow-warm text-dusk">
+                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#dfe7d7] text-lg font-bold text-[#2f2b2a]">02</div>
+                        <h3 class="font-serif text-4xl text-dusk">Clarify</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We define your direction, your strengths, and the kind of work that actually fits your life.</p>
+                    </div>
+
+                    <div class="rounded-[28px] border border-white/20 bg-[#edf3f7]/90 p-7 shadow-warm text-dusk">
+                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#cddfe8] text-lg font-bold text-[#2f2b2a]">03</div>
+                        <h3 class="font-serif text-4xl text-dusk">Build</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We shape the plan, positioning, and strategy to help you move forward with intention.</p>
+                    </div>
+
+                    <div class="rounded-[28px] border border-white/20 bg-[#f8efe8]/90 p-7 shadow-warm text-dusk">
+                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#e7d0c3] text-lg font-bold text-[#2f2b2a]">04</div>
+                        <h3 class="font-serif text-4xl text-dusk">Navigate</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We support the decisions, conversations, and next steps so you do not have to do it alone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="warm-bg px-5 py-20 md:px-8 lg:px-12 lg:py-28">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-12 max-w-3xl">
+                    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#2f4f3f]">Services</p>
+                    <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
+                        Support for the work-life version of you that wants to feel more at home.
+                    </h2>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-3">
+                    <article class="rounded-[30px] border border-[#e7dfd6] bg-[#f8f2e9] p-7 shadow-warm">
+                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#dd9c69] text-2xl text-white"><i class="fa-solid fa-route"></i></div>
+                        <h3 class="font-serif text-4xl text-dusk">Career clarity</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We untangle your goals, values, and strengths so the next step feels clear instead of chaotic.</p>
+                        <ul class="mt-6 space-y-3 text-sm text-dusk/75">
+                            <li><span class="mr-2 text-[#c96d4d]">•</span>Career vision and values work</li>
+                            <li><span class="mr-2 text-[#c96d4d]">•</span>Role exploration and fit</li>
+                            <li><span class="mr-2 text-[#c96d4d]">•</span>Decision-making support</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-[30px] border border-[#e7dfd6] bg-[#edf0e8] p-7 shadow-warm">
+                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#b8c5a1] text-2xl text-[#2f4d3d]"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3 class="font-serif text-4xl text-dusk">Job search strategy</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">Your resume, story, and search approach become more intentional, confident, and effective.</p>
+                        <ul class="mt-6 space-y-3 text-sm text-dusk/75">
+                            <li><span class="mr-2 text-[#2f4d3d]">•</span>Resume and LinkedIn positioning</li>
+                            <li><span class="mr-2 text-[#2f4d3d]">•</span>Interview prep and storytelling</li>
+                            <li><span class="mr-2 text-[#2f4d3d]">•</span>Offer and negotiation support</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-[30px] border border-[#e7dfd6] bg-[#f7f0df] p-7 shadow-warm">
+                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#c7ad71] text-2xl text-white"><i class="fa-solid fa-leaf"></i></div>
+                        <h3 class="font-serif text-4xl text-dusk">Leadership growth</h3>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/70">Whether you are building confidence or preparing for a bigger role, we sharpen your voice and presence.</p>
+                        <ul class="mt-6 space-y-3 text-sm text-dusk/75">
+                            <li><span class="mr-2 text-[#9d7f46]">•</span>Executive presence and confidence</li>
+                            <li><span class="mr-2 text-[#9d7f46]">•</span>Promotion strategy</li>
+                            <li><span class="mr-2 text-[#9d7f46]">•</span>Career transitions and pivots</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-5 py-20 md:px-8 lg:px-12 lg:py-28" style="background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=80'); background-size: cover; background-position: center;">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch">
+                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 p-7 shadow-warm text-dusk flex h-full flex-col justify-center">
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#2f4d3d]">My approach</p>
+                        <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
+                            Not more pressure. More perspective.
+                        </h2>
+                        <p class="mt-6 max-w-xl text-lg leading-relaxed text-dusk/75">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit, libero id suscipit dignissim, nisl ex feugiat justo, vel aliquet augue ligula in purus. Integer feugiat posuere lorem, vitae vestibulum risus volutpat non.
+                        </p>
+                    </div>
+
+                    <div class="overflow-hidden rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 shadow-warm flex h-full flex-col">
+                        <div id="quote-slider" class="relative min-h-[220px] flex-1 p-6">
+                            <div class="quote-slide active block">
+                                <p class="text-lg italic leading-relaxed text-dusk/80">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed tellus sed urna feugiat rhoncus. Morbi sed enim in libero blandit ullamcorper.”</p>
+                                <div class="mt-6 flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Alicia Moreno" class="h-12 w-12 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-semibold text-dusk">Alicia Moreno</p>
+                                        <p class="text-[10px] uppercase tracking-[0.22em] text-olive">Product Lead</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-slide hidden">
+                                <p class="text-lg italic leading-relaxed text-dusk/80">“Praesent vitae nibh at lorem ultrices volutpat. Nulla facilisi. Mauris malesuada mi in tortor dignissim, ut viverra metus sollicitudin.”</p>
+                                <div class="mt-6 flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Jordan Sullivan" class="h-12 w-12 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-semibold text-dusk">Jordan Sullivan</p>
+                                        <p class="text-[10px] uppercase tracking-[0.22em] text-olive">Operations Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-slide hidden">
+                                <p class="text-lg italic leading-relaxed text-dusk/80">“Integer posuere, massa sed tincidunt placerat, nunc lectus auctor ipsum, at condimentum eros mauris sed lorem. It changed how I approached my next move.”</p>
+                                <div class="mt-6 flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Kendra Ross" class="h-12 w-12 rounded-full object-cover">
+                                    <div>
+                                        <p class="font-semibold text-dusk">Kendra Ross</p>
+                                        <p class="text-[10px] uppercase tracking-[0.22em] text-olive">Design Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex items-center justify-between border-t border-[#e5dccd] px-6 pb-6 pt-4">
+                            <div class="flex items-center gap-2">
+                                <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/60 transition hover:bg-terracotta" data-slide="0" aria-label="View testimonial 1"></button>
+                                <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-terracotta" data-slide="1" aria-label="View testimonial 2"></button>
+                                <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-terracotta" data-slide="2" aria-label="View testimonial 3"></button>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <button id="prev-quote" class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5dccd] bg-white text-sm text-dusk transition hover:border-terracotta hover:text-terracotta" aria-label="Previous quote">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button id="next-quote" class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5dccd] bg-white text-sm text-dusk transition hover:border-terracotta hover:text-terracotta" aria-label="Next quote">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-it-matters" class="warm-bg px-5 py-20 md:px-8 lg:px-12 lg:py-28">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-12 max-w-3xl">
+                    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#2f4f3f]">Why this work matters</p>
+                    <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
+                        A career should support the life you are actually building.
+                    </h2>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
+                    <div class="rounded-[34px] bg-[#2f4f3f] p-8 text-white shadow-warm md:p-10 lg:row-span-3 lg:flex lg:flex-col lg:justify-between">
+                        <p class="mb-5 text-[10px] uppercase tracking-[0.28em] text-white/75">The bigger picture</p>
+                        <h3 class="font-serif text-5xl leading-none text-white md:text-6xl">Work should feel like a place to grow, not just a place to pay bills.</h3>
+                        <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">
+                            Career growth becomes far more meaningful when it is rooted in your strengths, your values, and the kind of life you actually want to live.
+                        </p>
+                        <div class="mt-8 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-[10px] uppercase tracking-[0.24em] text-white/80">
+                            <span class="inline-block h-2.5 w-2.5 rounded-full bg-[#d77b4a]"></span>
+                            more clarity, less friction
+                        </div>
+                    </div>
+
+                    <div class="rounded-[28px] border border-[#e7dfd6] bg-[#f8f2e9] p-6 shadow-warm">
+                        <div class="flex items-start gap-4">
+                            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#d77b4a] text-lg font-bold text-white">01</div>
+                            <div>
+                                <h4 class="font-serif text-4xl text-dusk">Clarity</h4>
+                                <p class="mt-2 text-base leading-relaxed text-dusk/70">When your strengths and values are clear, decisions get lighter and the next move feels honest.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-[28px] border border-[#e7dfd6] bg-[#eef2ea] p-6 shadow-warm">
+                        <div class="flex items-start gap-4">
+                            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#88a17d] text-lg font-bold text-white">02</div>
+                            <div>
+                                <h4 class="font-serif text-4xl text-dusk">Confidence</h4>
+                                <p class="mt-2 text-base leading-relaxed text-dusk/70">You do not need to force a path that drains you. You need strategy that matches who you are.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-[28px] border border-[#e7dfd6] bg-[#f7f0df] p-6 shadow-warm">
+                        <div class="flex items-start gap-4">
+                            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#c7ad71] text-lg font-bold text-white">03</div>
+                            <div>
+                                <h4 class="font-serif text-4xl text-dusk">Momentum</h4>
+                                <p class="mt-2 text-base leading-relaxed text-dusk/70">The right work creates energy, intention, and a stronger sense of possibility than just chasing the next title.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="warm-bg px-5 pb-20 pt-8 md:px-8 lg:px-12 lg:pb-28">
+            <div class="cta-photo mx-auto max-w-7xl rounded-[34px] p-8 text-white shadow-warm md:p-12" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
+                <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                    <div>
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">Let’s talk</p>
+                        <h2 class="font-serif text-5xl leading-none text-white md:text-6xl">
+                            Ready to move toward work that feels more like home?
+                        </h2>
+                        <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/85">
+                            Book a free consultation and we will talk about where you are, where you want to go, and what it takes to get there with clarity and confidence.
+                        </p>
+                    </div>
+
+                    <div class="rounded-[28px] border border-white/30 bg-white/10 p-6 backdrop-blur-sm">
+                        <p class="text-sm uppercase tracking-[0.25em] text-white/80">Book a consultation</p>
+                        <div class="mt-6 space-y-4">
+                            <a href="https://calendly.com/tonyshaker" target="_blank" rel="noreferrer" class="flex items-center gap-4 rounded-2xl bg-[#d77b4a] p-4 transition hover:bg-[#c96d4d]">
+                                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><i class="fa-solid fa-calendar-check"></i></div>
+                                <div>
+                                    <p class="text-[10px] uppercase tracking-[0.22em] text-white/75">Schedule</p>
+                                    <p class="text-base font-medium">Book a free consult</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:hello@tonyshaker.com" class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 transition hover:bg-white/15">
+                                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <p class="text-[10px] uppercase tracking-[0.22em] text-white/70">Email</p>
+                                    <p class="text-base font-medium">hello@tonyshaker.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 transition hover:bg-white/15">
+                                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div>
+                                    <p class="text-[10px] uppercase tracking-[0.22em] text-white/70">LinkedIn</p>
+                                    <p class="text-base font-medium">Connect with Tony</p>
+                                </div>
+                            </a>
+
+                            <a href="#top" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-base font-medium text-[#2f4d3d] transition hover:bg-[#efc77d]">Back to top</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-[#e3d8cd] warm-bg px-5 py-8 md:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-dusk/60 md:flex-row">
+            <p>© 2026 Tony Shaker</p>
+            <div class="flex items-center gap-6">
+                <a href="#about" class="transition hover:text-[#c96d4d]">About</a>
+                <a href="#services" class="transition hover:text-[#c96d4d]">Services</a>
+                <a href="#contact" class="transition hover:text-[#c96d4d]">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const quoteSlides = document.querySelectorAll('.quote-slide');
+        const quoteDots = document.querySelectorAll('.quote-dot');
+        const prevQuote = document.getElementById('prev-quote');
+        const nextQuote = document.getElementById('next-quote');
+        const testimonialHero = document.getElementById('testimonial-hero');
+        const testimonialImages = [
+            'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80'
+        ];
+        let currentQuote = 0;
+
+        function showQuote(index) {
+            currentQuote = (index + quoteSlides.length) % quoteSlides.length;
+
+            quoteSlides.forEach((slide, idx) => {
+                slide.classList.toggle('hidden', idx !== currentQuote);
+                slide.classList.toggle('block', idx === currentQuote);
+            });
+
+            quoteDots.forEach((dot, idx) => {
+                const isActive = idx === currentQuote;
+                dot.classList.toggle('bg-dusk/60', isActive);
+                dot.classList.toggle('bg-dusk/20', !isActive);
+            });
+
+            if (testimonialHero) {
+                testimonialHero.style.backgroundImage = `url('${testimonialImages[currentQuote]}')`;
+            }
+        }
+
+        prevQuote.addEventListener('click', () => showQuote(currentQuote - 1));
+        nextQuote.addEventListener('click', () => showQuote(currentQuote + 1));
+        quoteDots.forEach((dot) => {
+            dot.addEventListener('click', () => showQuote(Number(dot.dataset.slide)));
+        });
+
+        showQuote(0);
+    </script>
+</body>
+</html>
