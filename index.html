@@ -69,7 +69,7 @@
         }
 
         .photo-scrim {
-            background: linear-gradient(90deg, rgba(21, 17, 14, 0.46) 0%, rgba(21, 17, 14, 0.18) 38%, rgba(21, 17, 14, 0) 100%);
+            background: linear-gradient(90deg, rgba(21, 17, 14, 0.46) 0%, rgba(21, 17, 14, 0.18) 0%, rgba(21, 17, 14, 0) 100%);
         }
     </style>
 </head>
@@ -252,8 +252,8 @@
             <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center"></div>
             <div class="photo-scrim absolute inset-0 z-0"></div>
             <div class="relative z-10 mx-auto max-w-7xl">
-                <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch">
-                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 p-7 shadow-warm text-dusk flex h-full flex-col justify-center">
+                <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:min-h-[620px]">
+                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 p-7 shadow-warm text-dusk flex h-full flex-col justify-center lg:p-10">
                         <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#2f4d3d]">My approach</p>
                         <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
                             Not more pressure. More perspective.
@@ -264,10 +264,10 @@
                     </div>
 
                     <div class="overflow-hidden rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 shadow-warm flex h-full flex-col">
-                        <div id="quote-slider" class="relative min-h-[220px] flex-1 p-6">
+                        <div id="quote-slider" class="relative min-h-[320px] flex-1 p-8 md:p-10">
                             <div class="quote-slide active block">
-                                <p class="text-lg italic leading-relaxed text-dusk/80">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed tellus sed urna feugiat rhoncus. Morbi sed enim in libero blandit ullamcorper.”</p>
-                                <div class="mt-6 flex items-center gap-3">
+                                <p class="text-xl italic leading-relaxed text-dusk/80 md:text-2xl">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed tellus sed urna feugiat rhoncus. Morbi sed enim in libero blandit ullamcorper.”</p>
+                                <div class="mt-8 flex items-center gap-3">
                                     <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Alicia Moreno" class="h-12 w-12 rounded-full object-cover">
                                     <div>
                                         <p class="font-semibold text-dusk">Alicia Moreno</p>
@@ -277,8 +277,8 @@
                             </div>
 
                             <div class="quote-slide hidden">
-                                <p class="text-lg italic leading-relaxed text-dusk/80">“Praesent vitae nibh at lorem ultrices volutpat. Nulla facilisi. Mauris malesuada mi in tortor dignissim, ut viverra metus sollicitudin.”</p>
-                                <div class="mt-6 flex items-center gap-3">
+                                <p class="text-xl italic leading-relaxed text-dusk/80 md:text-2xl">“Praesent vitae nibh at lorem ultrices volutpat. Nulla facilisi. Mauris malesuada mi in tortor dignissim, ut viverra metus sollicitudin.”</p>
+                                <div class="mt-8 flex items-center gap-3">
                                     <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Jordan Sullivan" class="h-12 w-12 rounded-full object-cover">
                                     <div>
                                         <p class="font-semibold text-dusk">Jordan Sullivan</p>
@@ -288,8 +288,8 @@
                             </div>
 
                             <div class="quote-slide hidden">
-                                <p class="text-lg italic leading-relaxed text-dusk/80">“Integer posuere, massa sed tincidunt placerat, nunc lectus auctor ipsum, at condimentum eros mauris sed lorem. It changed how I approached my next move.”</p>
-                                <div class="mt-6 flex items-center gap-3">
+                                <p class="text-xl italic leading-relaxed text-dusk/80 md:text-2xl">“Integer posuere, massa sed tincidunt placerat, nunc lectus auctor ipsum, at condimentum eros mauris sed lorem. It changed how I approached my next move.”</p>
+                                <div class="mt-8 flex items-center gap-3">
                                     <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Kendra Ross" class="h-12 w-12 rounded-full object-cover">
                                     <div>
                                         <p class="font-semibold text-dusk">Kendra Ross</p>
@@ -299,7 +299,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-6 flex items-center justify-between border-t border-[#e5dccd] px-6 pb-6 pt-4">
+                        <div class="mt-6 flex items-center justify-between border-t border-[#e5dccd] px-6 pb-6 pt-4 md:px-8 md:pb-8">
                             <div class="flex items-center gap-2">
                                 <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/60 transition hover:bg-terracotta" data-slide="0" aria-label="View testimonial 1"></button>
                                 <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-terracotta" data-slide="1" aria-label="View testimonial 2"></button>
