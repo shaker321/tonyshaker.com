@@ -75,37 +75,38 @@
 </head>
 <body>
 
-    <!-- Header changed to 'fixed' and given an ID for the scroll script -->
+    <!-- Header updated to keep CTA button visible on mobile -->
     <header id="main-header" class="fixed inset-x-0 top-0 z-50 transition-colors duration-300">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
-            <a href="#top" class="flex items-center gap-3">
-                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-sm font-bold text-pine shadow-md">TS</div>
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
+            <a href="#top" class="flex items-center gap-2 md:gap-3">
+                <div class="flex h-9 w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-white/90 text-xs md:text-sm font-bold text-pine shadow-md">TS</div>
                 <div class="flex flex-col items-start justify-center leading-none text-left text-white">
-                    <p class="font-serif text-3xl leading-[0.9] tracking-[-0.04em] [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">Tony Shaker</p>
-                    <p class="mt-3 text-[10px] uppercase tracking-[0.28em] text-white/90 [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Career coaching</p>
+                    <p class="font-serif text-2xl md:text-3xl leading-[0.9] tracking-[-0.04em] [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">Tony Shaker</p>
+                    <p class="mt-2 md:mt-3 text-[9px] md:text-[10px] uppercase tracking-[0.28em] text-white/90 [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Career coaching</p>
                 </div>
             </a>
 
-            <div class="hidden items-center gap-8 md:flex">
-                <a href="#about" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">About</a>
-                <a href="#services" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Services</a>
-                <a href="#testimonials" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Testimonials</a>
-                <a href="https://calendly.com/tonyshaker" class="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#d77b4a] shadow-lg shadow-[#d77b4a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4]">Book a consult</a>
+            <div class="flex items-center gap-4 md:gap-8">
+                <!-- Text links hidden on mobile -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">About</a>
+                    <a href="#services" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Services</a>
+                    <a href="#testimonials" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Testimonials</a>
+                </div>
+                <!-- Button always visible, scales slightly on mobile -->
+                <a href="https://calendly.com/tonyshaker" class="whitespace-nowrap rounded-full bg-white px-4 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-medium text-[#d77b4a] shadow-lg shadow-[#d77b4a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4]">Book a consult</a>
             </div>
         </nav>
     </header>
 
     <main id="top">
         
-        <!-- HERO SECTION REBUILT WITH DIRECTIONAL SCRIM -->
+        <!-- HERO SECTION -->
         <section class="relative min-h-screen px-5 pb-20 pt-28 md:px-8 lg:px-12 overflow-hidden">
-            <!-- The Image Layer -->
             <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center"></div>
             
-            <!-- The Gradient Layer: consistent, subtle scrim -->
             <div class="photo-scrim absolute inset-0 z-0"></div>
             
-            <!-- The Content Layer -->
             <div class="relative z-10 mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center">
                 <div class="w-full max-w-[980px]">
                     <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-white backdrop-blur-sm">
@@ -150,15 +151,15 @@
                         </p>
 
                         <p class="mt-6 text-lg leading-relaxed text-dusk/80">
-                            Despite excelling academically, I wasn't happy at the University of Pennsylvania so I left. I spent a few years trying different things before enrolling in a coding bootcamp and landing my first engineering job. I later quit to direct and produce a movie in a <strong>6-story abandoned hotel</strong> were vagrants were actively living and setting boobytraps for us.
+                            Despite excelling academically, I wasn't happy at the University of Pennsylvania so I left. I spent a few years trying different things before enrolling in a coding bootcamp and landing my first engineering job. I later quit to direct and produce a movie in a 6-story abandoned hotel where vagrants were actively living and <strong>setting boobytraps for us.</strong>
                         </p>
 
                         <p class="mt-6 text-lg leading-relaxed text-dusk/80">
-                            After wrapping film production and distribution, I got a job at <strong>Bloomberg</strong> building compliance software for trading systems serving ~14,000 professionals across 90+ countries and 850 client firms. I left Bloomberg after three years to join an <strong>electric vehicle startup</strong> as their first engineer laying their technolocial and hiring foundation and performing the first ever EV charge on a 5G network as part of a pilot program with Verizon. I then left to spend over a year driving <strong>62,169 miles</strong> across the lower 48 states in my Subaru camping out on patches of desert and mountain tops, getting intentionally lost, turning strangers into friends, and learning just how much I'm capable of.
+                            After wrapping film production and distribution, I got a job at Bloomberg building compliance software for trading systems serving <strong>~14,000 professionals across 90+ countries</strong> and 850 client firms. I left Bloomberg after three years to join an electric vehicle startup as their first engineer laying their technolocial and hiring foundation and performing the <strong>first ever EV charge on a 5G network</strong> as part of a pilot program with Verizon. I then left to spend over a year <strong>driving 62,169 miles across the lower 48 states</strong> in my Subaru camping out on patches of desert and mountain tops, getting intentionally lost, turning strangers into friends, and learning just how much I'm capable of.
                         </p>
 
                         <p class="mt-6 text-lg leading-relaxed text-dusk/80">
-                            When I returned, I started teaching Amazon warehouse associates how to become professional software developers while doing advisory work for early stage startups before landing a job doing Machine Learning Infrastructure at <strong>Meta</strong> working to improve the experience of over 3 billion active users at Instagram and building bleeding edge electromyography wristbands. After three years at Meta, I left to start my own career coaching practice.
+                            When I returned, I started <strong>teaching Amazon warehouse associates how to become professional software developers</strong> while doing advisory work for early stage startups before landing a job doing Machine Learning Infrastructure at Meta, working to improve the experience of <strong>over 3 billion active users</strong> at Instagram and building bleeding edge <strong>electromyography wristbands.</strong> After three years at Meta, I left to start my own career coaching practice.
                         </p>
 
                         <p class="mt-6 text-lg leading-relaxed text-dusk/80">
@@ -177,15 +178,11 @@
             </div>
         </section>
 
-        <!-- JOURNEY SECTION REBUILT WITH TOP-DOWN SCRIM -->
+        <!-- JOURNEY SECTION -->
         <section id="process" class="relative px-5 py-20 text-white md:px-8 lg:px-12 lg:py-28 overflow-hidden">
-            <!-- The Image Layer -->
             <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center"></div>
-            
-            <!-- The Gradient Layer: consistent scrim -->
             <div class="photo-scrim absolute inset-0 z-0"></div>
             
-            <!-- The Content Layer -->
             <div class="relative z-10 mx-auto max-w-7xl">
                 <div class="mx-auto mb-12 max-w-4xl md:p-8">
                     <div class="text-center">
@@ -203,8 +200,9 @@
                         <p class="mt-4 text-base leading-relaxed text-dusk/70">We look at where you are, what matters most, and what is quietly draining your energy.</p>
                     </div>
 
+                    <!-- Updated Circle Background Color to #b5c7a3 for contrast -->
                     <div class="rounded-[28px] border border-white/20 bg-[#eef5ee]/90 p-7 shadow-warm text-dusk backdrop-blur-sm">
-                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#dfe7d7] text-lg font-bold text-[#2f2b2a]">02</div>
+                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#b5c7a3] text-lg font-bold text-[#2f2b2a]">02</div>
                         <h3 class="font-serif text-4xl text-dusk">Clarify</h3>
                         <p class="mt-4 text-base leading-relaxed text-dusk/70">We define your direction, your strengths, your areas of improvement, and the kind of work that makes you feel alive.</p>
                     </div>
@@ -344,63 +342,34 @@
             </div>
         </section>
 
-        <!-- CTA SECTION -->
+        <!-- CTA SECTION (Removed "Back to top") -->
         <section id="contact" class="warm-bg px-5 pb-20 pt-8 md:px-8 lg:px-12 lg:pb-28">
-            <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[34px] shadow-warm">
-                <!-- The Image Layer -->
-                <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center"></div>
-                
-                <!-- The Gradient Layer -->
-                <div class="photo-scrim absolute inset-0 z-0"></div>
-                
-                <!-- The Content Layer -->
-                <div class="relative z-10 p-8 md:p-12 text-white">
-                    <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-                        <div>
-                            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">Let’s talk</p>
-                            <h2 class="font-serif text-5xl leading-none text-white md:text-6xl drop-shadow-md">
-                                Do it for you.
-                            </h2>
-                            <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/90 drop-shadow-md">
-                                Stop letting burnout and accidental managers dictate your life. Book a free consultation and let's talk about where you are, where you want to go, and how we get you there.
-                            </p>
+            <div class="mx-auto max-w-7xl bg-pine rounded-[34px] shadow-warm p-8 md:p-12 lg:p-16 text-white">
+                <div class="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
+                    <div>
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">Let’s talk</p>
+                        <h2 class="font-serif text-5xl leading-none text-white md:text-6xl">
+                            Do it for you.
+                        </h2>
+                        <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/90">
+                            Stop letting burnout and accidental managers dictate your life. Book a free consultation and let's talk about where you are, where you want to go, and how we get you there.
+                        </p>
+                        <p class="mt-6 max-w-lg text-lg font-medium text-white">
+                            Invest in yourself. You deserve it.
+                        </p>
+                    </div>
 
+                    <!-- Streamlined Buttons -->
+                    <div class="flex flex-col gap-4">
+                        <a href="https://calendly.com/tonyshaker" target="_blank" rel="noreferrer" class="flex items-center justify-center gap-4 rounded-full bg-[#d77b4a] px-8 py-5 transition hover:-translate-y-1 hover:bg-[#c96d4d] shadow-lg">
+                            <i class="fa-solid fa-calendar-check text-xl"></i>
+                            <span class="text-lg font-semibold">Book a free consult</span>
+                        </a>
 
-                            <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/90 drop-shadow-md">
-                                Invest in yourself. You deserve it.
-                            </p>
-                        </div>
-
-                        <div class="rounded-[28px] border border-white/20 bg-black/15 p-6 backdrop-blur-sm">
-                            <p class="text-sm uppercase tracking-[0.25em] text-white/90">Book a consultation</p>
-                            <div class="mt-6 space-y-4">
-                                <a href="https://calendly.com/tonyshaker" target="_blank" rel="noreferrer" class="flex items-center gap-4 rounded-2xl bg-[#d77b4a] p-4 transition hover:bg-[#c96d4d]">
-                                    <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><i class="fa-solid fa-calendar-check"></i></div>
-                                    <div>
-                                        <p class="text-[10px] uppercase tracking-[0.22em] text-white/80">Schedule</p>
-                                        <p class="text-base font-medium">Book a free consult</p>
-                                    </div>
-                                </a>
-
-                                <a href="mailto:hello@tonyshaker.com" class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 transition hover:bg-white/20">
-                                    <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><i class="fa-solid fa-envelope"></i></div>
-                                    <div>
-                                        <p class="text-[10px] uppercase tracking-[0.22em] text-white/80">Email</p>
-                                        <p class="text-base font-medium">hello@tonyshaker.com</p>
-                                    </div>
-                                </a>
-
-                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 transition hover:bg-white/20">
-                                    <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><i class="fa-brands fa-linkedin-in"></i></div>
-                                    <div>
-                                        <p class="text-[10px] uppercase tracking-[0.22em] text-white/80">LinkedIn</p>
-                                        <p class="text-base font-medium">Connect with Tony</p>
-                                    </div>
-                                </a>
-
-                                <a href="#top" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-base font-medium text-[#2f4d3d] transition hover:bg-[#efc77d]">Back to top</a>
-                            </div>
-                        </div>
+                        <a href="mailto:hello@tonyshaker.com" class="flex items-center justify-center gap-4 rounded-full border border-white/20 bg-white/5 px-8 py-5 transition hover:bg-white/10">
+                            <i class="fa-solid fa-envelope text-white/70"></i>
+                            <span class="text-base font-medium text-white/90">hello@tonyshaker.com</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -410,11 +379,15 @@
     <footer class="border-t border-[#e3d8cd] warm-bg px-5 py-8 md:px-8">
         <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-dusk/60 md:flex-row">
             <p>© 2026 Tony Shaker</p>
+            
             <div class="flex items-center gap-6">
+                <!-- LinkedIn added to footer -->
+                <a href="https://www.linkedin.com/in/tonyshaker" target="_blank" rel="noreferrer" class="text-lg transition hover:text-[#c96d4d]" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
                 <a href="#about" class="transition hover:text-[#c96d4d]">About</a>
                 <a href="#services" class="transition hover:text-[#c96d4d]">Services</a>
                 <a href="#testimonials" class="transition hover:text-[#c96d4d]">Testimonials</a>
-                <a href="#contact" class="transition hover:text-[#c96d4d]">Contact</a>
             </div>
         </div>
     </footer>
@@ -459,7 +432,6 @@
 
         showQuote(0);
 
-        // Adds a background color to the navbar when the user scrolls down
         const header = document.getElementById('main-header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
