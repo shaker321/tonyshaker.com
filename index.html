@@ -69,13 +69,14 @@
         }
 
         .photo-scrim {
-            background: linear-gradient(90deg, rgba(21, 17, 14, 0.46) 0%, rgba(21, 17, 14, 0.18) 0%, rgba(21, 17, 14, 0) 100%);
+            background: linear-gradient(90deg, rgba(21, 17, 14, 0.7) 0%, rgba(21, 17, 14, 0.2) 50%, rgba(21, 17, 14, 0) 100%);
         }
     </style>
 </head>
 <body>
 
-    <header class="absolute inset-x-0 top-0 z-50">
+    <!-- Header changed to 'fixed' and given an ID for the scroll script -->
+    <header id="main-header" class="fixed inset-x-0 top-0 z-50 transition-colors duration-300">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
             <a href="#top" class="flex items-center gap-3">
                 <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-sm font-bold text-pine shadow-md">TS</div>
@@ -142,33 +143,33 @@
                     <div class="dog-photo h-[440px] overflow-hidden rounded-[30px] border border-[#d8c4a7] shadow-warm"></div>
 
                     <div class="rounded-[30px] border border-[#d8c4a7] bg-[#f7efe5] p-8 shadow-warm md:p-10">
-                        <p class="text-md leading-relaxed text-dusk/80">
+                        <p class="text-lg leading-relaxed text-dusk/80">
                             Hi! I'm Tony. I've spent over a decade as a software engineer at Meta, Bloomberg, 
-                            and early as well as established startups. I did all that as an Ivy League dropout 
+                            and early as well as established startups. I did all that as an <strong>Ivy League dropout</strong> 
                             who consistently chose the road less traveled.
                         </p>
 
-                        <p class="mt-6 text-md leading-relaxed text-dusk/80">
-                            Despite excelling academically, I wasn't happy at the University of Pennsylvania so I left. I spent a few years trying different things before enrolling in a coding bootcamp and landing my first engineering job. I later quit to direct and produce a movie in a 6-story abandoned hotel were vagrants were actively living and setting boobytraps for us.
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                            Despite excelling academically, I wasn't happy at the University of Pennsylvania so I left. I spent a few years trying different things before enrolling in a coding bootcamp and landing my first engineering job. I later quit to direct and produce a movie in a <strong>6-story abandoned hotel</strong> were vagrants were actively living and setting boobytraps for us.
                         </p>
 
-                        <p class="mt-6 text-md leading-relaxed text-dusk/80">
-                            After wrapping film production and distribution, I got a job at Bloomberg building compliance software for trading systems serving ~14,000 professionals across 90+ countries and 850 client firms. I left Bloomberg after three years to join an electric vehicle startup as their first engineer laying their technolocial and hiring foundation and performing the first ever EV charge on a 5G network as part of a pilot program with Verizon. I then left to spend over a year driving 62,169 miles across the lower 48 states in my Subaru camping out on patches of desert and mountain tops, getting intentionally lost, turning strangers into friends, and learning just how much I'm capable of.
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                            After wrapping film production and distribution, I got a job at <strong>Bloomberg</strong> building compliance software for trading systems serving ~14,000 professionals across 90+ countries and 850 client firms. I left Bloomberg after three years to join an <strong>electric vehicle startup</strong> as their first engineer laying their technolocial and hiring foundation and performing the first ever EV charge on a 5G network as part of a pilot program with Verizon. I then left to spend over a year driving <strong>62,169 miles</strong> across the lower 48 states in my Subaru camping out on patches of desert and mountain tops, getting intentionally lost, turning strangers into friends, and learning just how much I'm capable of.
                         </p>
 
-                        <p class="mt-6 text-md leading-relaxed text-dusk/80">
-                            When I returned, I started teaching Amazon warehouse associates how to become professional software developers while doing advisory work for early stage startups before landing a job doing Machine Learning Infrastructure at Meta working to improve the experience of over 3 billion active users at Instagram and building bleeding edge electromyography wristbands. After three years at Meta, I left to start my own career coaching practice.
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                            When I returned, I started teaching Amazon warehouse associates how to become professional software developers while doing advisory work for early stage startups before landing a job doing Machine Learning Infrastructure at <strong>Meta</strong> working to improve the experience of over 3 billion active users at Instagram and building bleeding edge electromyography wristbands. After three years at Meta, I left to start my own career coaching practice.
                         </p>
 
-                        <p class="mt-6 text-md leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
                             So how does a college dropout, sometimes film director, and professional wanderer land jobs at Meta, Bloomberg, startups, and teaching roles? 
                         </p>
 
-                        <p class="mt-6 text-md leading-relaxed text-dusk/80">    
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">    
                             By giving my myself permission to take control of my own career through understanding how to market myself, communicating effectively, navigating office politics, setting boundaries, and taking calculated risks. I know my life is short. I don't want to waste it living someone else's dream.
                         </p>
 
-                        <p class="mt-6 text-md leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
                             It's time to help you do the same.
                         </p>
                     </div>
@@ -190,7 +191,7 @@
                     <div class="text-center">
                         <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#f3d39f]">The Journey</p>
                         <h2 class="font-serif text-5xl leading-none text-white md:text-6xl">
-                            1000 thousand steps in actionable and achievable pieces.
+                            A thousand steps in actionable and achievable pieces.
                         </h2>
                     </div>
                 </div>
@@ -457,6 +458,16 @@
         });
 
         showQuote(0);
+
+        // Adds a background color to the navbar when the user scrolls down
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-pine/95', 'backdrop-blur-md', 'border-b', 'border-white/10');
+            } else {
+                header.classList.remove('bg-pine/95', 'backdrop-blur-md', 'border-b', 'border-white/10');
+            }
+        });
     </script>
 </body>
 </html>
