@@ -59,7 +59,7 @@
         }
 
         .dog-photo {
-            background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80');
+            background-image: url('me.JPG');
             background-size: cover;
             background-position: center;
         }
@@ -76,10 +76,14 @@
 </head>
 <body>
 
+    <a href="#top" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:font-bold focus:text-pine focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-rust">
+        Skip to main content
+    </a>
+
     <header id="main-header" class="fixed inset-x-0 top-0 z-50 transition-colors duration-300">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
-            <a href="#top" class="flex items-center gap-2 md:gap-3">
-                <div class="flex h-9 w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-white/90 text-xs md:text-sm font-bold text-pine shadow-md">TS</div>
+        <nav aria-label="Primary navigation" class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
+            <a href="#top" class="flex items-center gap-2 rounded-lg md:gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">
+                <div aria-hidden="true" class="flex h-9 w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-white/90 text-xs md:text-sm font-bold text-pine shadow-md">TS</div>
                 <div class="flex flex-col items-start justify-center leading-none text-left text-white">
                     <p class="font-serif text-2xl md:text-3xl leading-[0.9] tracking-[-0.04em] [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">Tony Shaker</p>
                     <p class="mt-2 md:mt-3 text-[9px] md:text-[10px] uppercase tracking-[0.28em] text-white/90 [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Career coaching</p>
@@ -88,11 +92,11 @@
 
             <div class="flex items-center gap-4 md:gap-8">
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#about" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">About</a>
-                    <a href="#services" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Services</a>
-                    <a href="#testimonials" class="text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">Testimonials</a>
+                    <a href="#about" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">About</a>
+                    <a href="#services" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Services</a>
+                    <a href="#testimonials" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Testimonials</a>
                 </div>
-                <a href="https://calendly.com/tonyshaker" class="whitespace-nowrap rounded-full bg-white px-4 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-medium text-[#d77b4a] shadow-lg shadow-[#d77b4a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4]">Book a consult</a>
+                <a href="https://calendly.com/tonyshaker" class="whitespace-nowrap rounded-full bg-white px-4 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-semibold text-rust shadow-lg shadow-rust/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Book a consult</a>
             </div>
         </nav>
     </header>
@@ -107,7 +111,7 @@
             
             <div class="relative z-10 mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center">
                 <div class="w-full max-w-[980px]">
-                    <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-white backdrop-blur-sm">
+                    <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-black/25 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.28em] text-white backdrop-blur-sm">
                         Do work worth doing
                     </div>
 
@@ -115,13 +119,13 @@
                         Take control of your career. 
                     </h1>
 
-                    <p class="mt-6 max-w-[820px] text-lg leading-relaxed text-white/90 md:text-xl drop-shadow-md">
+                    <p class="mt-6 max-w-[820px] text-lg leading-relaxed text-white/95 md:text-xl drop-shadow-md">
                         Whether it's starting a new role, pivoting to a different path, growing into a leadership position, or finding harmony in what you're doing, I help you steer your career to a place of joy and fulfillment that's authentic to you.
                     </p>
 
                     <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-                        <a href="https://calendly.com/tonyshaker" class="inline-flex items-center justify-center rounded-full bg-[#d77b4a] px-7 py-3.5 text-base font-medium text-white shadow-lg shadow-[#d77b4a]/30 transition hover:-translate-y-0.5 hover:bg-[#c96d4d]">Book a free consult</a>
-                        <a href="#about" class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-base font-medium text-white backdrop-blur-md transition hover:bg-white/20">Learn more</a>
+                        <a href="https://calendly.com/tonyshaker" class="inline-flex items-center justify-center rounded-full bg-rust px-7 py-3.5 text-base font-medium text-white shadow-lg shadow-rust/30 transition hover:-translate-y-0.5 hover:bg-[#8f3f30] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-dusk">Book a free consult</a>
+                        <a href="#about" class="inline-flex items-center justify-center rounded-full border border-white/40 bg-black/25 px-7 py-3.5 text-base font-medium text-white backdrop-blur-md transition hover:bg-black/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-dusk">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -131,43 +135,43 @@
         <section id="about" class="warm-bg px-5 py-20 md:px-8 lg:px-12 lg:py-28">
             <div class="mx-auto max-w-7xl">
                 <div class="mb-12 max-w-3xl">
-                    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#2f4f3f]">About Tony</p>
+                    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-pine">About Tony</p>
                     <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
                         Career coaching backed by experience.
                     </h2>
                 </div>
 
                 <div class="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
-                    <div class="dog-photo h-[440px] overflow-hidden rounded-[30px] border border-[#d8c4a7] shadow-warm lg:sticky lg:top-28 lg:h-[680px]"></div>
+                    <div aria-hidden="true" class="dog-photo h-[440px] overflow-hidden rounded-[30px] border border-[#d8c4a7] shadow-warm lg:sticky lg:top-28 lg:h-[680px]"></div>
 
                     <div class="rounded-[30px] border border-[#d8c4a7] bg-[#f7efe5] p-8 shadow-warm md:p-10">
-                        <p class="text-lg leading-relaxed text-dusk/80">
+                        <p class="text-lg leading-relaxed text-dusk/85">
                             Hi! I'm Tony. I've spent over a <strong>decade as a software engineer at Meta, Bloomberg,</strong> 
                             and early as well as established startups. I did all that as an <strong>Ivy League dropout</strong> 
                             who consistently chose the <strong>road less traveled</strong>.
                         </p>
 
-                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/85">
                             Despite excelling academically, I wasn't happy at the University of Pennsylvania so I left. I spent a few years trying different things before enrolling in a coding bootcamp and landing my first engineering job. I later quit to <strong>direct and produce a movie in a 6-story abandoned hotel where vagrants were actively living and setting boobytraps for us.</strong>
                         </p>
 
-                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/85">
                             After wrapping film production and distribution, I got a job at <strong>Bloomberg building compliance software for trading systems serving ~14,000 professionals across 90+ countries and 850 client firms</strong>. I left Bloomberg after three years to join an electric vehicle startup as their first engineer laying their technological and hiring foundation and performing the <strong>first-ever EV charge on a 5G network</strong> as part of a pilot program with Verizon. I then left to spend over a year <strong>driving 62,169 miles across the lower 48 states</strong> in my Subaru, camping on patches of desert and mountain tops, getting intentionally lost, turning strangers into friends, and <strong>learning just how much I'm capable of</strong>.
                         </p>
 
-                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/85">
                             When I returned, I started <strong>teaching Amazon warehouse associates how to become professional software developers</strong> while doing advisory work for early-stage startups before landing a job doing <strong>Machine Learning Infrastructure at Meta</strong>, working to improve the experience of <strong>over 3 billion active users</strong> on Instagram and building cutting-edge <strong>electromyography wristbands</strong>. After three years at Meta, I left to start my own career coaching practice.
                         </p>
 
-                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/85">
                             So how does a college dropout, sometimes film director, and professional wanderer land jobs at Meta, Bloomberg, startups, and teaching roles?
                         </p>
 
-                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/85">
                             By <strong>giving myself permission</strong> to take control of my own career through understanding how to market myself, communicate effectively, navigate office politics, set boundaries, and take calculated risks. I know my life is short. I don't want to waste it living someone else's dream.
                         </p>
 
-                        <p class="mt-6 text-lg leading-relaxed text-dusk/80">
+                        <p class="mt-6 text-lg leading-relaxed text-dusk/85">
                             <strong>It's time to help you do the same.</strong>
                         </p>
                     </div>
@@ -183,42 +187,42 @@
             <div class="relative z-10 mx-auto max-w-7xl">
                 <div class="mx-auto mb-12 max-w-4xl md:p-8">
                     <div class="text-center">
-                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#f3d39f]">The Journey</p>
-                        <h2 class="font-serif text-5xl leading-none text-white md:text-6xl">
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#f3d39f] [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)]">The Journey</p>
+                        <h2 class="font-serif text-5xl leading-none text-white md:text-6xl drop-shadow-md">
                             A thousand steps in actionable and achievable pieces.
                         </h2>
                     </div>
                 </div>
 
                 <div class="grid gap-6 lg:grid-cols-4">
-                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 p-7 shadow-warm text-dusk backdrop-blur-sm">
-                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#f0d29b] text-lg font-bold text-[#2f2b2a]">01</div>
+                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/95 p-7 shadow-warm text-dusk backdrop-blur-sm">
+                        <div aria-hidden="true" class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#f0d29b] text-lg font-bold text-[#2f2b2a]">01</div>
                         <h3 class="font-serif text-4xl text-dusk">Assess</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We look at where you are, what matters most, and what is quietly draining your energy.</p>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">We look at where you are, what matters most, and what is quietly draining your energy.</p>
                     </div>
 
-                    <div class="rounded-[28px] border border-white/20 bg-[#eef5ee]/90 p-7 shadow-warm text-dusk backdrop-blur-sm">
-                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#b5c7a3] text-lg font-bold text-[#2f2b2a]">02</div>
+                    <div class="rounded-[28px] border border-white/20 bg-[#eef5ee]/95 p-7 shadow-warm text-dusk backdrop-blur-sm">
+                        <div aria-hidden="true" class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#b5c7a3] text-lg font-bold text-[#2f2b2a]">02</div>
                         <h3 class="font-serif text-4xl text-dusk">Clarify</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We define your direction, your strengths, your areas of improvement, and the kind of work that makes you feel alive.</p>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">We define your direction, your strengths, your areas of improvement, and the kind of work that makes you feel alive.</p>
                     </div>
 
-                    <div class="rounded-[28px] border border-white/20 bg-[#edf3f7]/90 p-7 shadow-warm text-dusk backdrop-blur-sm">
-                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#cddfe8] text-lg font-bold text-[#2f2b2a]">03</div>
+                    <div class="rounded-[28px] border border-white/20 bg-[#edf3f7]/95 p-7 shadow-warm text-dusk backdrop-blur-sm">
+                        <div aria-hidden="true" class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#cddfe8] text-lg font-bold text-[#2f2b2a]">03</div>
                         <h3 class="font-serif text-4xl text-dusk">Build</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We shape the plan, positioning, and strategy to help you achieve your goals with intention and confidence.</p>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">We shape the plan, positioning, and strategy to help you achieve your goals with intention and confidence.</p>
                     </div>
 
-                    <div class="rounded-[28px] border border-white/20 bg-[#f8efe8]/90 p-7 shadow-warm text-dusk backdrop-blur-sm">
-                        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#e7d0c3] text-lg font-bold text-[#2f2b2a]">04</div>
+                    <div class="rounded-[28px] border border-white/20 bg-[#f8efe8]/95 p-7 shadow-warm text-dusk backdrop-blur-sm">
+                        <div aria-hidden="true" class="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#e7d0c3] text-lg font-bold text-[#2f2b2a]">04</div>
                         <h3 class="font-serif text-4xl text-dusk">Navigate</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We support the decisions, conversations, and next steps so you do not have to navigate it alone.</p>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">We support the decisions, conversations, and next steps so you do not have to navigate it alone.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-       <!-- SERVICES SECTION -->
+        <!-- SERVICES SECTION -->
         <section id="services" class="warm-bg px-5 py-20 md:px-8 lg:px-12 lg:py-28">
             <div class="mx-auto max-w-7xl">
                 <div class="mb-12 max-w-3xl">
@@ -230,35 +234,35 @@
 
                 <div class="grid gap-8 lg:grid-cols-3">
                     <article class="rounded-[30px] border border-[#e7dfd6] bg-[#f8f2e9] p-7 shadow-warm">
-                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#dd9c69] text-2xl text-white"><i class="fa-solid fa-compass"></i></div>
+                        <div aria-hidden="true" class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#dd9c69] text-2xl text-white"><i class="fa-solid fa-compass" aria-hidden="true"></i></div>
                         <h3 class="font-serif text-3xl text-dusk">Mastering Your Role</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">We'll tackle the friction right in front of you. Learn how to navigate office politics, manage up, and have the hard conversations you've been avoiding.</p>
-                        <ul class="mt-6 space-y-3 text-sm text-dusk/75">
-                            <li><span class="mr-2 text-[#c96d4d]">•</span>Setting boundaries & finding work-life balance</li>
-                            <li><span class="mr-2 text-[#c96d4d]">•</span>Internal marketing & promotion strategy</li>
-                            <li><span class="mr-2 text-[#c96d4d]">•</span>Uncovering blind spots & building confidence</li>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">We'll tackle the friction right in front of you. Learn how to navigate office politics, manage up, and have the hard conversations you've been avoiding.</p>
+                        <ul class="mt-6 space-y-3 text-sm text-dusk/85">
+                            <li><span aria-hidden="true" class="mr-2 text-rust">•</span>Setting boundaries & finding work-life balance</li>
+                            <li><span aria-hidden="true" class="mr-2 text-rust">•</span>Internal marketing & promotion strategy</li>
+                            <li><span aria-hidden="true" class="mr-2 text-rust">•</span>Uncovering blind spots & building confidence</li>
                         </ul>
                     </article>
 
                     <article class="rounded-[30px] border border-[#e7dfd6] bg-[#edf0e8] p-7 shadow-warm">
-                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#b8c5a1] text-2xl text-pine"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div aria-hidden="true" class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#b8c5a1] text-2xl text-pine"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
                         <h3 class="font-serif text-3xl text-dusk">Clarity & The Sabbatical</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">For when you know something needs to change, but you aren't sure what. We'll figure out what you actually want to do and how to get there.</p>
-                        <ul class="mt-6 space-y-3 text-sm text-dusk/75">
-                            <li><span class="mr-2 text-pine">•</span>Evaluating & planning a structured sabbatical</li>
-                            <li><span class="mr-2 text-pine">•</span>Identifying true strengths & areas for growth</li>
-                            <li><span class="mr-2 text-pine">•</span>Deciding if it's the right time to leave</li>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">For when you know something needs to change, but you aren't sure what. We'll figure out what you actually want to do and how to get there.</p>
+                        <ul class="mt-6 space-y-3 text-sm text-dusk/85">
+                            <li><span aria-hidden="true" class="mr-2 text-pine">•</span>Evaluating & planning a structured sabbatical</li>
+                            <li><span aria-hidden="true" class="mr-2 text-pine">•</span>Identifying true strengths & areas for growth</li>
+                            <li><span aria-hidden="true" class="mr-2 text-pine">•</span>Deciding if it's the right time to leave</li>
                         </ul>
                     </article>
 
                     <article class="rounded-[30px] border border-[#e7dfd6] bg-[#f7f0df] p-7 shadow-warm">
-                        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#c7ad71] text-2xl text-white"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                        <div aria-hidden="true" class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#c7ad71] text-2xl text-white"><i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i></div>
                         <h3 class="font-serif text-3xl text-dusk">Execution & Transition</h3>
-                        <p class="mt-4 text-base leading-relaxed text-dusk/70">When it is time to leave, I will help you land gracefully. We'll translate your experience into a compelling narrative and execute the leap.</p>
-                        <ul class="mt-6 space-y-3 text-sm text-dusk/75">
-                            <li><span class="mr-2 text-[#9d7f46]">•</span>Resume review & framing your story</li>
-                            <li><span class="mr-2 text-[#9d7f46]">•</span>Storytelling for interviews & networking</li>
-                            <li><span class="mr-2 text-[#9d7f46]">•</span>Negotiating offers & evaluating lifestyle fit</li>
+                        <p class="mt-4 text-base leading-relaxed text-dusk/80">When it is time to leave, I will help you land gracefully. We'll translate your experience into a compelling narrative and execute the leap.</p>
+                        <ul class="mt-6 space-y-3 text-sm text-dusk/85">
+                            <li><span aria-hidden="true" class="mr-2 text-[#7a612f]">•</span>Resume review & framing your story</li>
+                            <li><span aria-hidden="true" class="mr-2 text-[#7a612f]">•</span>Storytelling for interviews & networking</li>
+                            <li><span aria-hidden="true" class="mr-2 text-[#7a612f]">•</span>Negotiating offers & evaluating lifestyle fit</li>
                         </ul>
                     </article>
                 </div>
@@ -271,22 +275,22 @@
             <div class="photo-scrim absolute inset-0 z-0"></div>
             <div class="relative z-10 mx-auto max-w-7xl">
                 <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:min-h-[620px]">
-                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 p-7 shadow-warm text-dusk flex h-full flex-col justify-center lg:p-10">
+                    <div class="rounded-[28px] border border-white/20 bg-[#f9f2e8]/95 p-7 shadow-warm text-dusk flex h-full flex-col justify-center lg:p-10">
                         <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-pine">My approach</p>
                         <h2 class="font-serif text-5xl leading-none text-dusk md:text-6xl">
                             Bringing out the best in you.
                         </h2>
-                        <p class="mt-6 max-w-xl text-lg leading-relaxed text-dusk/75">
+                        <p class="mt-6 max-w-xl text-lg leading-relaxed text-dusk/85">
                             I'm not here to change you, I'm here to bring out the best in you. I help you realize the potential that abounds in you already and build the career that you want and deserve by encouraging you when you need confidence, challenging you when you're playing small, and helping you build a healthy relationship with work. Together, we build a career that augments every other part of your life.
                         </p>
                     </div>
 
-                    <div class="overflow-hidden rounded-[28px] border border-white/20 bg-[#f9f2e8]/90 shadow-warm flex h-full flex-col">
-                        <div id="quote-slider" class="relative min-h-[320px] flex-1 p-8 md:p-10">
+                    <div class="overflow-hidden rounded-[28px] border border-white/20 bg-[#f9f2e8]/95 shadow-warm flex h-full flex-col">
+                        <div id="quote-slider" aria-live="polite" class="relative min-h-[320px] flex-1 p-8 md:p-10">
                             <div class="quote-slide active block">
-                                <p class="text-xl italic leading-relaxed text-dusk/80 md:text-2xl">"Tony helped me find the courage to have the hard conversations I was terrified of. He challenged my blind spots, but supported me the entire way. My day-to-day stress has plummeted."</p>
+                                <p class="text-xl italic leading-relaxed text-dusk/85 md:text-2xl">"Tony helped me find the courage to have the hard conversations I was terrified of. He challenged my blind spots, but supported me the entire way. My day-to-day stress has plummeted."</p>
                                 <div class="mt-8 flex items-center gap-3">
-                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-pine text-sm font-semibold text-white">SM</div>
+                                    <div aria-hidden="true" class="flex h-12 w-12 items-center justify-center rounded-full bg-pine text-sm font-semibold text-white">SM</div>
                                     <div>
                                         <p class="font-semibold text-dusk">Steven M.</p>
                                         <p class="text-[10px] uppercase tracking-[0.22em] text-olive">Engineering Manager</p>
@@ -295,9 +299,9 @@
                             </div>
 
                             <div class="quote-slide hidden">
-                                <p class="text-xl italic leading-relaxed text-dusk/80 md:text-2xl">"I was paralyzed by the logistics of taking a sabbatical. Tony helped me figure out what I actually wanted, planned the exit, and taught me how to frame my story for when I returned."</p>
+                                <p class="text-xl italic leading-relaxed text-dusk/85 md:text-2xl">"I was paralyzed by the logistics of taking a sabbatical. Tony helped me figure out what I actually wanted, planned the exit, and taught me how to frame my story for when I returned."</p>
                                 <div class="mt-8 flex items-center gap-3">
-                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#768d63] text-sm font-semibold text-white">VP</div>
+                                    <div aria-hidden="true" class="flex h-12 w-12 items-center justify-center rounded-full bg-pine text-sm font-semibold text-white">VP</div>
                                     <div>
                                         <p class="font-semibold text-dusk">Viresh P.</p>
                                         <p class="text-[10px] uppercase tracking-[0.22em] text-olive">Staff Engineer</p>
@@ -306,9 +310,9 @@
                             </div>
 
                             <div class="quote-slide hidden">
-                                <p class="text-xl italic leading-relaxed text-dusk/80 md:text-2xl">"Tony doesn't just review your resume; he helps you market your true value. He gave me the confidence to negotiate my offer and actually evaluate it for lifestyle fit, not just the title."</p>
+                                <p class="text-xl italic leading-relaxed text-dusk/85 md:text-2xl">"Tony doesn't just review your resume; he helps you market your true value. He gave me the confidence to negotiate my offer and actually evaluate it for lifestyle fit, not just the title."</p>
                                 <div class="mt-8 flex items-center gap-3">
-                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#c7ad71] text-sm font-semibold text-white">SJ</div>
+                                    <div aria-hidden="true" class="flex h-12 w-12 items-center justify-center rounded-full bg-rust text-sm font-semibold text-white">SJ</div>
                                     <div>
                                         <p class="font-semibold text-dusk">Sarah J.</p>
                                         <p class="text-[10px] uppercase tracking-[0.22em] text-olive">Senior Product Manager</p>
@@ -319,17 +323,17 @@
 
                         <div class="mt-6 flex items-center justify-between border-t border-[#e5dccd] px-6 pb-6 pt-4 md:px-8 md:pb-8">
                             <div class="flex items-center gap-2">
-                                <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/60 transition hover:bg-terracotta" data-slide="0" aria-label="View testimonial 1"></button>
-                                <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-terracotta" data-slide="1" aria-label="View testimonial 2"></button>
-                                <button class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-terracotta" data-slide="2" aria-label="View testimonial 3"></button>
+                                <button type="button" class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/60 transition hover:bg-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2" data-slide="0" aria-label="View testimonial 1" aria-pressed="true"></button>
+                                <button type="button" class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2" data-slide="1" aria-label="View testimonial 2" aria-pressed="false"></button>
+                                <button type="button" class="quote-dot h-2.5 w-2.5 rounded-full bg-dusk/20 transition hover:bg-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2" data-slide="2" aria-label="View testimonial 3" aria-pressed="false"></button>
                             </div>
 
                             <div class="flex items-center gap-2">
-                                <button id="prev-quote" class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5dccd] bg-white text-sm text-dusk transition hover:border-terracotta hover:text-terracotta" aria-label="Previous quote">
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                <button type="button" id="prev-quote" class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5dccd] bg-white text-sm text-dusk transition hover:border-rust hover:text-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2" aria-label="Previous quote">
+                                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                                 </button>
-                                <button id="next-quote" class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5dccd] bg-white text-sm text-dusk transition hover:border-terracotta hover:text-terracotta" aria-label="Next quote">
-                                    <i class="fa-solid fa-arrow-right"></i>
+                                <button type="button" id="next-quote" class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5dccd] bg-white text-sm text-dusk transition hover:border-rust hover:text-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2" aria-label="Next quote">
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </div>
@@ -338,16 +342,16 @@
             </div>
         </section>
 
-        <!-- CTA SECTION (Rebuilt with solid background to prevent photo fatigue) -->
+        <!-- CTA SECTION -->
         <section id="contact" class="warm-bg px-5 pb-20 pt-8 md:px-8 lg:px-12 lg:pb-28">
             <div class="mx-auto max-w-7xl bg-pine rounded-[34px] shadow-warm p-8 md:p-12 lg:p-16 text-white">
                 <div class="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
                     <div>
-                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">Let’s talk</p>
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/85">Let’s talk</p>
                         <h2 class="font-serif text-5xl leading-none text-white md:text-6xl">
                             Do it for you.
                         </h2>
-                        <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/90">
+                        <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/95">
                             Stop letting burnout and accidental managers dictate your life. Book a free consultation and let's talk about where you are, where you want to go, and how we get you there.
                         </p>
                         <p class="mt-6 max-w-lg text-xl font-bold text-white tracking-wide">
@@ -357,14 +361,14 @@
 
                     <!-- Consultation actions -->
                     <div class="flex flex-col gap-3">
-                        <a href="https://calendly.com/tonyshaker" target="_blank" rel="noreferrer" class="flex min-h-20 items-center justify-center gap-3 rounded-2xl bg-[#d77b4a] px-6 py-5 text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#c96d4d]">
-                            <i class="fa-solid fa-calendar-check text-xl text-white/90"></i>
+                        <a href="https://calendly.com/tonyshaker" target="_blank" rel="noreferrer" class="flex min-h-20 items-center justify-center gap-3 rounded-2xl bg-rust px-6 py-5 text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#8f3f30] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-pine">
+                            <i class="fa-solid fa-calendar-check text-xl text-white" aria-hidden="true"></i>
                             <span class="text-xl font-bold">Book a free consult</span>
                         </a>
 
-                        <a href="mailto:hello@tonyshaker.com" class="flex h-12 items-center justify-center gap-3 rounded-2xl border border-white/15 bg-white/5 px-6 transition hover:bg-white/10">
-                            <i class="fa-solid fa-envelope text-sm text-white/70"></i>
-                            <span class="text-sm font-medium text-white/90">hello@tonyshaker.com</span>
+                        <a href="mailto:hello@tonyshaker.com" class="flex h-12 items-center justify-center gap-3 rounded-2xl border border-white/25 bg-white/10 px-6 transition hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-pine">
+                            <i class="fa-solid fa-envelope text-sm text-white/90" aria-hidden="true"></i>
+                            <span class="text-sm font-medium text-white">hello@tonyshaker.com</span>
                         </a>
                     </div>
                 </div>
@@ -373,17 +377,16 @@
     </main>
 
     <footer class="border-t border-[#e3d8cd] warm-bg px-5 py-8 md:px-8">
-        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-dusk/60 md:flex-row">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-dusk/85 md:flex-row">
             <p>© 2026 Tony Shaker</p>
             
             <div class="flex items-center gap-6">
-                <!-- LinkedIn added to footer -->
-                <a href="https://linkedin.com/in/tonyshaker" target="_blank" rel="noreferrer" class="text-lg transition hover:text-[#c96d4d]" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/tonyshaker" target="_blank" rel="noreferrer" class="rounded text-lg transition hover:text-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="#about" class="transition hover:text-[#c96d4d]">About</a>
-                <a href="#services" class="transition hover:text-[#c96d4d]">Services</a>
-                <a href="#testimonials" class="transition hover:text-[#c96d4d]">Testimonials</a>
+                <a href="#about" class="rounded transition hover:text-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">About</a>
+                <a href="#services" class="rounded transition hover:text-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Services</a>
+                <a href="#testimonials" class="rounded transition hover:text-rust focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Testimonials</a>
             </div>
         </div>
     </footer>
@@ -413,6 +416,7 @@
                 const isActive = idx === currentQuote;
                 dot.classList.toggle('bg-dusk/60', isActive);
                 dot.classList.toggle('bg-dusk/20', !isActive);
+                dot.setAttribute('aria-pressed', String(isActive));
             });
 
             if (testimonialHero) {
