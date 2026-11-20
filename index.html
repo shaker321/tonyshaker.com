@@ -96,7 +96,7 @@
         }
 
         .dog-photo {
-            background-image: url('me.JPG');
+            background-image: url('/me.JPG');
             background-size: cover;
             background-position: center;
         }
@@ -130,10 +130,11 @@
             </a>
 
             <div class="flex items-center gap-4 md:gap-8">
-                <div class="hidden md:flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-7">
                     <a href="#about" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">About</a>
                     <a href="#services" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Services</a>
                     <a href="#testimonials" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Testimonials</a>
+                    <a href="/pricing" data-track="pricing_nav_click" class="rounded text-sm font-medium text-white transition hover:text-sunflower [text-shadow:_0_1px_4px_rgb(0_0_0_/_0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Pricing &amp; FAQ</a>
                 </div>
                 <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=navbar" data-cta="navbar" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap rounded-full bg-white px-4 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-semibold text-[#c44f0a] shadow-lg shadow-[#c44f0a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4] hover:text-[#9e3e06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Book a consult</a>
             </div>
@@ -309,6 +310,22 @@
                         </ul>
                     </article>
                 </div>
+
+                <!-- Employer Coverage & Pricing Discoverability Note -->
+                <div class="mt-10 flex flex-col items-start justify-between gap-4 rounded-[24px] border border-[#d8c4a7] bg-[#f7efe5] px-6 py-5 shadow-sm sm:flex-row sm:items-center md:px-8">
+                    <div class="flex items-start gap-3.5 sm:items-center">
+                        <div aria-hidden="true" class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-pine/10 text-pine sm:mt-0">
+                            <i class="fa-solid fa-briefcase text-base" aria-hidden="true"></i>
+                        </div>
+                        <p class="text-sm leading-relaxed text-dusk/85 md:text-base">
+                            <strong class="text-dusk">Your company may cover coaching.</strong> Many clients expense sessions through their employer's L&amp;D stipend or professional development budget.
+                        </p>
+                    </div>
+                    <a href="/pricing" data-track="pricing_services_click" class="inline-flex shrink-0 items-center gap-2 rounded-full border border-pine/30 bg-white px-5 py-2.5 text-sm font-semibold text-pine transition hover:border-pine hover:bg-pine hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2">
+                        <span>Pricing &amp; FAQ</span>
+                        <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -415,8 +432,12 @@
                         <p class="text-center text-sm text-white/95">
                             Free 25-min intro call · No sales pitch, just practical next steps.
                         </p>
+                        <p class="text-center text-xs text-white/80">
+                            Questions on format, L&amp;D reimbursement, or rates?
+                            <a href="/pricing" data-track="pricing_cta_click" class="underline underline-offset-4 transition hover:text-sunflower">See Pricing &amp; FAQ</a>
+                        </p>
 
-                        <a href="mailto:hello@tonyshaker.com" data-track="email_click" class="mt-1 flex h-12 items-center justify-center gap-3 rounded-2xl border border-white/25 bg-white/10 px-6 transition hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-pine">
+                        <a href="mailto:hello@tonyshaker.com" data-track="email_click" class="mt-2 flex h-12 items-center justify-center gap-3 rounded-2xl border border-white/25 bg-white/10 px-6 transition hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-pine">
                             <i class="fa-solid fa-envelope text-sm text-white/90" aria-hidden="true"></i>
                             <span class="text-sm font-medium text-white">hello@tonyshaker.com</span>
                         </a>
@@ -435,13 +456,14 @@
         <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-dusk/85 md:flex-row">
             <p>© 2026 Tony Shaker</p>
             
-            <div class="flex items-center gap-6">
+            <div class="flex flex-wrap items-center justify-center gap-6">
                 <a href="https://linkedin.com/in/tonyshaker" target="_blank" rel="noopener noreferrer" data-track="linkedin_footer_click" class="rounded text-lg transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]" aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
                 <a href="#about" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">About</a>
                 <a href="#services" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Services</a>
                 <a href="#testimonials" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Testimonials</a>
+                <a href="/pricing" data-track="pricing_footer_click" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Pricing &amp; FAQ</a>
             </div>
         </div>
     </footer>
@@ -512,22 +534,36 @@
             }
         });
 
-        // Forward incoming UTM parameters to all Cal.com CTAs + log clicks
+        // Persist incoming UTM parameters across pages and forward to all Cal.com CTAs
         const incomingParams = new URLSearchParams(window.location.search);
-        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term'];
+        const allUtmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+        let storedUtms = {};
+
+        try {
+            storedUtms = JSON.parse(sessionStorage.getItem('ts_utm') || '{}');
+            let updated = false;
+            allUtmKeys.forEach((key) => {
+                const val = incomingParams.get(key);
+                if (val) {
+                    storedUtms[key] = val;
+                    updated = true;
+                }
+            });
+            if (updated) {
+                sessionStorage.setItem('ts_utm', JSON.stringify(storedUtms));
+            }
+        } catch (e) {}
 
         document.querySelectorAll('a[data-cta]').forEach((link) => {
             const placement = link.dataset.cta;
             const url = new URL(link.href);
 
-            utmKeys.forEach((key) => {
-                const val = incomingParams.get(key);
-                if (val) url.searchParams.set(key, val);
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term'].forEach((key) => {
+                if (storedUtms[key]) url.searchParams.set(key, storedUtms[key]);
             });
 
-            const incomingContent = incomingParams.get('utm_content');
-            if (incomingContent) {
-                url.searchParams.set('utm_content', `${incomingContent}_${placement}`);
+            if (storedUtms.utm_content) {
+                url.searchParams.set('utm_content', `${storedUtms.utm_content}_${placement}`);
             }
 
             link.href = url.toString();
@@ -540,7 +576,7 @@
             });
         });
 
-        // Secondary exit tracking (email + LinkedIn)
+        // Secondary link tracking (pricing, email, LinkedIn)
         document.querySelectorAll('a[data-track]').forEach((link) => {
             link.addEventListener('click', () => {
                 trackEvent(link.dataset.track);
