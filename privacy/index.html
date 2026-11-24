@@ -6,8 +6,8 @@
     <title>Privacy Policy | Tony Shaker Career Coaching</title>
     <meta name="description" content="Privacy Policy for Tony Shaker LLC (tonyshaker.com), covering website analytics, session replay, booking tools, and client communications.">
     <link rel="canonical" href="https://tonyshaker.com/privacy">
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="/logo.png">
+    <link rel="icon" href="/favicon.png?v=2" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/favicon.png?v=2" sizes="180x180">
 
     <!-- Analytics: Umami Cloud & Microsoft Clarity -->
     <script>
@@ -91,8 +91,8 @@
         Skip to main content
     </a>
 
-    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-pine/95 backdrop-blur-md">
-        <nav aria-label="Primary navigation" class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
+    <header id="main-header" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-pine/95 backdrop-blur-md">
+        <nav aria-label="Primary navigation" class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 md:py-5">
             <a href="/" class="flex items-center gap-2 rounded-lg md:gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">
                 <div aria-hidden="true" class="flex h-9 w-9 md:h-11 md:w-11 items-center justify-center overflow-hidden rounded-full bg-[#faf5ee] shadow-md ring-1 ring-white/30">
                     <img src="/favicon.png" alt="" class="h-full w-full object-cover">
@@ -103,16 +103,50 @@
                 </div>
             </a>
 
-            <div class="flex items-center gap-4 md:gap-8">
+            <div class="flex items-center gap-2.5 md:gap-8">
                 <div class="hidden md:flex items-center gap-7">
                     <a href="/#about" class="rounded text-sm font-medium text-white transition hover:text-sunflower focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">About</a>
                     <a href="/#services" class="rounded text-sm font-medium text-white transition hover:text-sunflower focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Services</a>
                     <a href="/#testimonials" class="rounded text-sm font-medium text-white transition hover:text-sunflower focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Testimonials</a>
-                    <a href="/pricing" class="rounded text-sm font-medium text-white transition hover:text-sunflower focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Pricing &amp; FAQ</a>
+                    <a href="/pricing" aria-current="page" class="rounded text-sm font-semibold text-sunflower focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Pricing &amp; FAQ</a>
                 </div>
-                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=privacy_navbar" data-cta="privacy_navbar" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap rounded-full bg-white px-4 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-semibold text-[#c44f0a] shadow-lg shadow-[#c44f0a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4] hover:text-[#9e3e06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Book a consult</a>
+
+                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=subpage_navbar" data-cta="subpage_navbar" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap rounded-full bg-white px-3.5 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-semibold text-[#c44f0a] shadow-lg shadow-[#c44f0a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4] hover:text-[#9e3e06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Book a consult</a>
+
+                <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower md:hidden">
+                    <span id="menu-icon-open"><i class="fa-solid fa-bars text-base" aria-hidden="true"></i></span>
+                    <span id="menu-icon-close" class="hidden"><i class="fa-solid fa-xmark text-lg" aria-hidden="true"></i></span>
+                </button>
             </div>
         </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden border-t border-white/15 bg-pine/95 px-5 pb-6 pt-4 shadow-warm backdrop-blur-md md:hidden">
+            <div class="flex flex-col space-y-1">
+                <a href="/" class="mobile-nav-link rounded-xl px-3 py-3 text-base font-medium text-white transition hover:bg-white/10">Home</a>
+                <a href="/#about" class="mobile-nav-link rounded-xl px-3 py-3 text-base font-medium text-white transition hover:bg-white/10">About</a>
+                <a href="/#services" class="mobile-nav-link rounded-xl px-3 py-3 text-base font-medium text-white transition hover:bg-white/10">Services</a>
+                <a href="/#testimonials" class="mobile-nav-link rounded-xl px-3 py-3 text-base font-medium text-white transition hover:bg-white/10">Testimonials</a>
+                <a href="/pricing" aria-current="page" class="mobile-nav-link rounded-xl px-3 py-3 text-base font-semibold text-sunflower transition hover:bg-white/10">Pricing &amp; FAQ</a>
+            </div>
+
+            <div class="mt-4 border-t border-white/15 pt-4 flex flex-col gap-3">
+                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=subpage_mobile_menu" data-cta="subpage_mobile_menu" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 rounded-full bg-[#d77b4a] px-5 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-[#c96d4d]">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book a free 25-min consult</span>
+                </a>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <a href="mailto:hello@tonyshaker.com" data-track="mobile_email_click" class="flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-xs font-medium text-white transition hover:bg-white/15">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/tonyshaker" target="_blank" rel="noopener noreferrer" data-track="mobile_linkedin_click" class="flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-xs font-medium text-white transition hover:bg-white/15">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main id="top" class="px-5 pb-20 pt-28 md:px-8 md:pt-36 lg:px-12">
@@ -276,6 +310,54 @@
             }
             link.href = url.toString();
         });
+
+        // Sticky header transition & mobile hamburger menu
+        const header = document.getElementById('main-header');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+        let isMenuOpen = false;
+
+        function updateHeaderBg() {
+            if (!header || header.dataset.transparent !== 'true') return;
+            const shouldBeSolid = window.scrollY > 50 || isMenuOpen;
+            header.classList.toggle('bg-pine/95', shouldBeSolid);
+            header.classList.toggle('backdrop-blur-md', shouldBeSolid);
+            header.classList.toggle('border-b', shouldBeSolid);
+            header.classList.toggle('border-white/10', shouldBeSolid);
+        }
+
+        function setMobileMenu(open) {
+            isMenuOpen = open;
+            if (!mobileMenu || !mobileMenuBtn) return;
+            mobileMenu.classList.toggle('hidden', !open);
+            mobileMenuBtn.setAttribute('aria-expanded', String(open));
+            mobileMenuBtn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+            menuIconOpen?.classList.toggle('hidden', open);
+            menuIconClose?.classList.toggle('hidden', !open);
+            updateHeaderBg();
+        }
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                setMobileMenu(!isMenuOpen);
+                if (isMenuOpen && typeof trackEvent === 'function') {
+                    trackEvent('mobile_menu_open');
+                }
+            });
+
+            mobileMenu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => setMobileMenu(false));
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && isMenuOpen) setMobileMenu(false);
+            });
+        }
+
+        window.addEventListener('scroll', updateHeaderBg);
+        updateHeaderBg();
     </script>
 </body>
 </html>
