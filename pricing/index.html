@@ -130,7 +130,7 @@
                     <a href="/pricing" aria-current="page" class="rounded text-sm font-semibold text-sunflower focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Pricing &amp; FAQ</a>
                 </div>
 
-                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=subpage_navbar" data-cta="subpage_navbar" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap rounded-full bg-white px-3.5 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-semibold text-[#c44f0a] shadow-lg shadow-[#c44f0a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4] hover:text-[#9e3e06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Book a consult</a>
+                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=pricing_navbar" data-cta="pricing_navbar" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap rounded-full bg-white px-3.5 py-2 md:px-5 md:py-2.5 text-xs md:text-sm font-semibold text-[#c44f0a] shadow-lg shadow-[#c44f0a]/20 transition hover:-translate-y-0.5 hover:bg-[#f7ede4] hover:text-[#9e3e06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower focus-visible:ring-offset-2 focus-visible:ring-offset-pine">Book a consult</a>
 
                 <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunflower md:hidden">
                     <span id="menu-icon-open"><i class="fa-solid fa-bars text-base" aria-hidden="true"></i></span>
@@ -150,9 +150,9 @@
             </div>
 
             <div class="mt-4 border-t border-white/15 pt-4 flex flex-col gap-3">
-                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=subpage_mobile_menu" data-cta="subpage_mobile_menu" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 rounded-full bg-[#d77b4a] px-5 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-[#c96d4d]">
+                <a href="https://cal.com/tonyshaker/free-25min-career-consult?utm_source=website&utm_content=pricing_mobile_menu" data-cta="pricing_mobile_menu" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 rounded-full bg-[#d77b4a] px-5 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-[#c96d4d]">
                     <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
-                    <span>Book a free 25-min consult</span>
+                    <span>Book a free 25-minute consult</span>
                 </a>
                 <div class="grid grid-cols-2 gap-2.5">
                     <a href="mailto:hello@tonyshaker.com" data-track="mobile_email_click" class="flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-xs font-medium text-white transition hover:bg-white/15">
@@ -475,7 +475,7 @@
                 <a href="/#about" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">About</a>
                 <a href="/#services" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Services</a>
                 <a href="/#testimonials" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Testimonials</a>
-                <a href="/pricing" data-track="pricing_footer_click" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Pricing &amp; FAQ</a>
+                <a href="/pricing" aria-current="page" class="rounded font-semibold text-pine focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Pricing &amp; FAQ</a>
                 <a href="/privacy" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Privacy</a>
                 <a href="/terms" class="rounded transition hover:text-[#c44f0a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine focus-visible:ring-offset-2 focus-visible:ring-offset-[#efe1d1]">Terms</a>
             </div>
@@ -556,22 +556,12 @@
             });
         });
 
-        // Sticky header transition & mobile hamburger menu
-        const header = document.getElementById('main-header');
+        // Mobile hamburger menu
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIconOpen = document.getElementById('menu-icon-open');
         const menuIconClose = document.getElementById('menu-icon-close');
         let isMenuOpen = false;
-
-        function updateHeaderBg() {
-            if (!header || header.dataset.transparent !== 'true') return;
-            const shouldBeSolid = window.scrollY > 50 || isMenuOpen;
-            header.classList.toggle('bg-pine/95', shouldBeSolid);
-            header.classList.toggle('backdrop-blur-md', shouldBeSolid);
-            header.classList.toggle('border-b', shouldBeSolid);
-            header.classList.toggle('border-white/10', shouldBeSolid);
-        }
 
         function setMobileMenu(open) {
             isMenuOpen = open;
@@ -581,15 +571,12 @@
             mobileMenuBtn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
             menuIconOpen?.classList.toggle('hidden', open);
             menuIconClose?.classList.toggle('hidden', !open);
-            updateHeaderBg();
         }
 
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
                 setMobileMenu(!isMenuOpen);
-                if (isMenuOpen && typeof trackEvent === 'function') {
-                    trackEvent('mobile_menu_open');
-                }
+                if (isMenuOpen) trackEvent('mobile_menu_open');
             });
 
             mobileMenu.querySelectorAll('a').forEach((link) => {
@@ -600,9 +587,6 @@
                 if (e.key === 'Escape' && isMenuOpen) setMobileMenu(false);
             });
         }
-
-        window.addEventListener('scroll', updateHeaderBg);
-        updateHeaderBg();
     </script>
 </body>
 </html>
